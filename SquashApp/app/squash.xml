@@ -1,0 +1,41 @@
+<Page loaded="onPageLoaded">
+<GridLayout rows="50,50,50,50,100,*,auto" columns="*,*,*" cssClass="gridMain">
+
+	<Label id="lblPlayer1Name" text="{{ player1Name }}" cssClass="labelPlayerName" row="0" col="0" textWrap="true"/>
+	<Label text="vs" cssClass="labelPlayerName" row="0" col="1" textWrap="true"/>
+	<Label id="lblPlayer2Name" text="{{ player2Name }}" cssClass="labelPlayerName" row="0" col="2" textWrap="true"/>
+
+	<Label id="lblCurrentScorePlayer1" text="{{ player1Score }}" cssClass="labelCurrentScore" row="1" col="0" textWrap="true"/>
+	<Label id="lblCurrentScorePlayer2" text="{{ player2Score }}" cssClass="labelCurrentScore" row="1" col="2" textWrap="true"/>
+	
+	<Label id="lblCurrentScoreSet" text="{{ currentScoreSet }}" cssClass="labelScoreSet" row="2" col="1" textWrap="true"/>
+	<Label id="lblGameDuration" text="00:23:52" cssClass="labelGameDuration" row="3" col="1" textWrap="true"/>
+	
+	<GridLayout rows="*,*" columns="150,*,*,*,*" cssClass="gridSet" row="4" colSpan="3">
+		<Label id="lblPlayer1Name" text="{{ player1Name }}" cssClass="labelSetTable" row="0" col="0" textWrap="true"/>
+		<Label id="lblPlayer2Name" text="{{ player2Name }}" cssClass="labelSetTable" row="1" col="0" textWrap="true"/>
+
+		<Label id="lblPlayer1Set1" text="5" cssClass="labelSetTable" row="0" col="1" textWrap="true"/>
+		<Label id="lblPlayer2Set1" text="11" cssClass="labelSetTable" row="1" col="1" textWrap="true"/>
+
+		<Label id="lblPlayer1Set2" text="8" cssClass="labelSetTable" row="0" col="2" textWrap="true"/>
+		<Label id="lblPlayer2Set2" text="11" cssClass="labelSetTable" row="1" col="2" textWrap="true"/>
+
+		<Label id="lblPlayer1Set3" text="11" cssClass="labelSetTable" row="0" col="3" textWrap="true"/>
+		<Label id="lblPlayer2Set3" text="2" cssClass="labelSetTable" row="1" col="3" textWrap="true"/>
+
+		<Label id="lblPlayer1Set4" text="11" cssClass="labelSetTable" row="0" col="4" textWrap="true"/>
+		<Label id="lblPlayer2Set4" text="5" cssClass="labelSetTable" row="1" col="4" textWrap="true"/>
+	</GridLayout>
+
+	<ListView items="{{ items }}" row="5" colSpan="3">
+            <ListView.itemTemplate>
+                <Label text="{{ item }}" cssClass="labelInfo"/>
+            </ListView.itemTemplate>
+    </ListView>
+	
+	<Button text="Player 1" tap="tapPlayer1" row="6" col="0" />
+    <Button text="Player 2" tap="tapPlayer2" row="6" col="2" />
+
+</GridLayout>
+</Page>
