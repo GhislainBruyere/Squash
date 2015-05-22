@@ -14,10 +14,10 @@ var player1Set = 0;
 var player2Set = 0;
 
 exports.onPageNavigatedTo = function(args) {
-/*	player1Name = context;
+	player1Name = context;
 	player2Name = "Eric";
 	
-	bindingControls();*/
+	bindingControls();
 };
 
 exports.onPageLoaded = function(args) {
