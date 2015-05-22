@@ -21,9 +21,9 @@ exports.onPageNavigatedTo = function(args) {
 };
 
 exports.onPageLoaded = function(args) {
-/*    page = args.object;
+    page = args.object;
 	
-	bindingControls();*/
+	bindingControls();
 };
 
 exports.tapPlayer1 = function tapPlayer1(args) {
