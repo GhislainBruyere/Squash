@@ -1,12 +1,12 @@
 {
-  "ProjectName": "test",
+  "ProjectName": "SquashApp",
   "ProjectGuid": "828a9ea3-cede-43ce-8a47-38505de3a2a7",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.test",
-  "DisplayName": "test",
-  "Author": "",
-  "Description": "",
-  "BundleVersion": "1.0",
+  "AppIdentifier": "com.nbtconsult.squash",
+  "DisplayName": "Squash",
+  "Author": "NBTConsult",
+  "Description": "Squash Application",
+  "BundleVersion": "0.1",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
