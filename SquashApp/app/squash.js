@@ -64,8 +64,8 @@ function winPoint(player){
 function bindingControls(){
 		page.bindingContext = { 
 		items: items,
-		player2Name: player2Name,
-		player1Name: player1Name,
+		player2Name: "Ghislain Bruyere",
+		player1Name: "Antoine Guedes",
 		player1Score : player1Score,
 		currentScoreSet : player1Set + " - " + player2Set,
 		player2Score : player2Score,
