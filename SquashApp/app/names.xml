@@ -2,10 +2,10 @@
   <GridLayout rows="*,100,100,auto" columns="*,*" cssClass="gridMain">
 	  
     <Label id="lblPlayer1Name" text="Player 1" cssClass="labelPlayerName" row="1" col="0" textWrap="true"/>
-	<Text  id="txtPlayer1Name" text="" cssClass="labelPlayerName" row="1" col="1" textWrap="true"/>
+	<Label id="txtPlayer1Name" text="" cssClass="labelPlayerName" row="1" col="1" textWrap="true"/>
 	  
     <Label id="lblPlayer2Name" text="Player 2" cssClass="labelPlayerName" row="2" col="0" textWrap="true"/>
-	<Text  id="txtPlayer2Name" text="" cssClass="labelPlayerName" row="2" col="1"/>
+	<Label  id="txtPlayer2Name" text="" cssClass="labelPlayerName" row="2" col="1"/>
 	  
 	<Button text="Let's start" tap="tapStart" row="3" col="0" />
 	  

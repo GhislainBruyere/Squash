@@ -13,24 +13,18 @@ var player2Score = 0;
 var player1Set = 0;
 var player2Set = 0;
 
-exports.onPageLoaded = function(args) {
-    page = args.object;
+exports.onPageNavigatedTo = function(args) {
+/*	player1Name = context;
+	player2Name = "Eric";
 	
-	page.bindingContext = { 
-		items: items,
-		player2Name: "Françoise Gerard",
-		player1Name: "Ghislain Bruyère",
-		player1Score : player1Score,
-		player1Set : player1Set,
-		player2Score : player2Score,
-		player2Set : player2Set
-	};
+	bindingControls();*/
 };
 
-function pageNavigatedTo(args) {
-    var page = args.object;
-    page.bindingContext = page.navigationContext;
-}
+exports.onPageLoaded = function(args) {
+/*    page = args.object;
+	
+	bindingControls();*/
+};
 
 exports.tapPlayer1 = function tapPlayer1(args) {
 	winPoint(1)
@@ -70,8 +64,8 @@ function winPoint(player){
 function bindingControls(){
 		page.bindingContext = { 
 		items: items,
-		player2Name: "Françoise Gerard",
-		player1Name: "Ghislain Bruyère",
+		player2Name: player2Name,
+		player1Name: player1Name,
 		player1Score : player1Score,
 		currentScoreSet : player1Set + " - " + player2Set,
 		player2Score : player2Score,
